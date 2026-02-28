@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yunus Karatt - Professional Portfolio 2.0
+
+This is the official portfolio for **Yunus Karatt**, a self-taught Software Engineer.
+
+Repository: [https://github.com/yunus-karatt/portfolio2.0.git](https://github.com/yunus-karatt/portfolio2.0.git)
+
+---
 
 ## Getting Started
 
