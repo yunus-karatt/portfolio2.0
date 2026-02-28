@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   description: "Portfolio of Yunus Karatt, a Lead Frontend Developer specializing in the MERN stack with extensive experience in enterprise cloud platforms and web3.",
   keywords: ["Frontend Developer", "Lead Developer", "MERN Stack", "React", "Next.js", "Portfolio", "Software Engineering", "Yunus Karatt"],
   authors: [{ name: "Yunus Karatt" }],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "Yunus | Lead Frontend Developer",
     description: "Portfolio of Yunus, a Lead Frontend Developer specializing in the MERN stack.",
