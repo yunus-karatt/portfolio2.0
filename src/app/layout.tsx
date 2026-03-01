@@ -8,8 +8,8 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yunus Karatt | Lead Frontend Developer",
-  description: "Portfolio of Yunus Karatt, a Lead Frontend Developer specializing in the MERN stack with extensive experience in enterprise cloud platforms and web3.",
+  title: "Yunus Karatt | Software Engineer",
+  description: "Portfolio of Yunus Karatt, a Software Engineer specializing in the MERN stack with extensive experience in enterprise cloud platforms and web3.",
   keywords: ["Frontend Developer", "Lead Developer", "MERN Stack", "React", "Next.js", "Portfolio", "Software Engineering", "Yunus Karatt"],
   authors: [{ name: "Yunus Karatt" }],
   icons: {
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     apple: "/icon.png",
   },
   openGraph: {
-    title: "Yunus | Lead Frontend Developer",
-    description: "Portfolio of Yunus, a Lead Frontend Developer specializing in the MERN stack.",
+    title: "Yunus | Software Engineer",
+    description: "Portfolio of Yunus, a Software Engineer specializing in the MERN stack.",
     type: "website",
   },
 };
