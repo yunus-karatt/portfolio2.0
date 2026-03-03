@@ -49,11 +49,13 @@ export default async function BlogPost({ params }: PostPageProps) {
             </h1>
           </header>
 
-          <div className="blog-article prose prose-base md:prose-xl dark:prose-invert max-w-none 
-            prose-p:leading-[1.6] md:prose-p:leading-[1.8] prose-p:mb-8
+          <div className="blog-article prose prose-lg md:prose-xl dark:prose-invert max-w-none 
+            prose-p:mb-8
             prose-headings:font-black prose-headings:tracking-tight prose-headings:text-foreground
+            prose-h2:text-3xl md:prose-h2:text-5xl prose-h2:mb-8 prose-h2:mt-16
+            prose-h3:text-2xl md:prose-h3:text-3xl prose-h3:mb-6 prose-h3:mt-12
             prose-a:text-primary prose-a:no-underline prose-a:border-b prose-a:border-primary/30 hover:prose-a:border-primary transition-all
-            prose-blockquote:border-l-primary prose-blockquote:bg-muted/30 prose-blockquote:p-8 md:prose-blockquote:p-12 prose-blockquote:rounded-r-3xl prose-blockquote:not-italic prose-blockquote:text-2xl md:prose-blockquote:text-3xl prose-blockquote:font-serif
+            prose-blockquote:border-l-primary prose-blockquote:bg-muted/30 prose-blockquote:p-8 md:prose-blockquote:p-12 prose-blockquote:rounded-r-3xl prose-blockquote:not-italic prose-blockquote:text-lg md:prose-blockquote:text-xl prose-blockquote:font-serif
             prose-img:rounded-3xl prose-img:shadow-2xl">
             <ReactMarkdown>{post.content}</ReactMarkdown>
           </div>
