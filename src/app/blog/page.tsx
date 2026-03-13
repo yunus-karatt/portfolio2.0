@@ -2,6 +2,12 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 import { format } from "date-fns";
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Stories",
+  description: "Sharing my journey through engineering, leadership, and the art of self-taught mastery.",
+};
 
 export default function BlogList() {
   const posts = getAllPosts();

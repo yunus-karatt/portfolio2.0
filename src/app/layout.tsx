@@ -4,22 +4,43 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yunus Karatt | Software Engineer",
+  metadataBase: new URL("https://karatt.in"), 
+  title: {
+    default: "Yunus Karatt | Software Engineer",
+    template: "%s | Yunus Karatt"
+  },
   description: "Portfolio of Yunus Karatt, a Software Engineer specializing in the MERN stack with extensive experience in enterprise cloud platforms and web3.",
-  keywords: ["Frontend Developer", "Lead Developer", "MERN Stack", "React", "Next.js", "Portfolio", "Software Engineering", "Yunus Karatt"],
+  keywords: ["Frontend Developer", "Lead Developer", "MERN Stack", "React", "Next.js", "Portfolio", "Software Engineering", "Yunus Karatt", "Web3", "Cloud Computing"],
   authors: [{ name: "Yunus Karatt" }],
+  creator: "Yunus Karatt",
   icons: {
     icon: "/icon.png",
     apple: "/icon.png",
   },
   openGraph: {
-    title: "Yunus | Software Engineer",
-    description: "Portfolio of Yunus, a Software Engineer specializing in the MERN stack.",
+    title: "Yunus Karatt | Software Engineer",
+    description: "Portfolio of Yunus Karatt, specializing in MERN stack and enterprise cloud platforms.",
+    url: "https://karatt.in",
+    siteName: "Yunus Karatt Portfolio",
+    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yunus Karatt | Software Engineer",
+    description: "Portfolio of Yunus Karatt, specializing in MERN stack and enterprise cloud platforms.",
+    creator: "@yyas404",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -65,7 +86,12 @@ export default function RootLayout({
               </div>
             </footer>
           </div>
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
       </body>
     </html>
   );

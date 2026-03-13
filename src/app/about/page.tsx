@@ -1,4 +1,10 @@
 import { Briefcase, GraduationCap, Code2, Rocket } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "The story and technical background of Yunus Karatt.",
+};
 
 export default function About() {
   return (
@@ -53,13 +59,13 @@ export default function About() {
 }
 
 const timelineEvents = [
-  {
-    title: "Software Engineer ",
-    company: "Pinnacle Tele Services Ltd",
-    date: "November 2025 — Present",
-    icon: <Rocket className="w-5 h-5" />,
-    description: "Leading the frontend team in developing high-performance web applications. Working extensively with React, FastAPI, and PostgreSQL to deliver scalable solutions."
-  },
+  // {
+  //   title: "Software Engineer ",
+  //   company: "Pinnacle Tele Services Ltd",
+  //   date: "November 2025 — Present",
+  //   icon: <Rocket className="w-5 h-5" />,
+  //   description: "Leading the frontend team in developing high-performance web applications. Working extensively with React, FastAPI, and PostgreSQL to deliver scalable solutions."
+  // },
   {
     title: "Lead Frontend Developer",
     company: "Mizzle (under Neogen Technology)",

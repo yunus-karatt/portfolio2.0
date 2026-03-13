@@ -1,5 +1,11 @@
 import Link from "next/link";
 import { ExternalLink, Github, Lock } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "A showcase of my professional and personal work, from enterprise cloud systems to community projects.",
+};
 
 const projects = [
   {
